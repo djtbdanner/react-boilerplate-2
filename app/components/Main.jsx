@@ -15,10 +15,12 @@ var Main = (props) => {
     <div>
       <div>
         <div>
-          <p>Main.jsx rendered</p>
+          <p>Main.jsx Rendered</p>
+          {props.children}
         </div>
       </div>
     </div>
-  )
-};
+  );
+}
+
 module.exports = Main;

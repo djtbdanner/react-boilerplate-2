@@ -6,14 +6,14 @@ module.exports = {
     'script!foundation-sites/dist/foundation.min.js',
     './app/app.jsx'
   ],
-  externals:{
+  externals: {
     jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
       '$': 'jquery',
-      'jQuery': 'jquery'})
-
+      'jQuery': 'jquery'
+    })
   ],
   output: {
     path: __dirname,
@@ -35,7 +35,7 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0']
         },
         test: /\.jsx?$/,
-        excude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/
       }
     ]
   },
